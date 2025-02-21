@@ -1,0 +1,128 @@
+/* General Container */
+.model-options-container {
+    font-family: 'Inter', sans-serif;
+    max-width: 900px; /* Restrict width */
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box; /* Prevent content overflow */
+    overflow: hidden; /* Prevent horizontal scroll */
+  }
+  
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    max-width: 100%; /* Ensure it doesn’t overflow */
+    box-sizing: border-box;
+  }
+  
+  /* Horizontal Layout */
+  .model-content {
+    display: flex;
+    flex-wrap: wrap; /* Prevent elements from overflowing */
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Left & Right Sections */
+  .left-section, .right-section {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Option Cards */
+  .option-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent content from spilling out */
+  }
+  
+  /* Dropdown & File Input */
+  select,
+  input[type="file"] {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    width: 90%;
+    max-width: 250px;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Uploaded Image Preview */
+  .uploaded-image {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Buttons */
+  .buttons {
+    margin-top: 10px;
+  }
+  
+  .primary-btn {
+    background: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .primary-btn:hover {
+    background: #ff4757;
+  }
+  
+  .secondary-btn {
+    background: #ddd;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .secondary-btn:hover {
+    background: #bbb;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .model-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+    }
+  
+    .option-card {
+      width: 90%;
+    }
+  }
+  
