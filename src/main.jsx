@@ -8,17 +8,19 @@
 //     <App />
 //   </StrictMode>
 // )
-import { StrictMode } from 'react';
+// import { StrictMode } from 'react';
+import { HashRouter } from 'react-router-dom';
+
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom'; // Import BrowserRouter
+// import { BrowserRouter } from 'react-router-dom'; // Import BrowserRouter
 import './index.css';
 import App from './App.jsx';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <BrowserRouter>
+  
+  <HashRouter>
+  <App />
+</HashRouter>
 
-      <App />
-    </BrowserRouter>
-  </StrictMode>
 );
+
